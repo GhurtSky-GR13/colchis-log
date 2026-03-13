@@ -50,6 +50,13 @@ def main():
     export_parser.add_argument('--format', choices=['csv', 'pdf'], default='csv')
     export_parser.add_argument('--output')
 
+    proof_parser = subparsers.add_parser('proof')
+    proof_parser.add_argument('logfile')
+
+    vproof_parser = subparsers.add_parser('verify-proof')
+    vproof_parser.add_argument('logfile')
+    vproof_parser.add_argument('prooffile')
+
     args = parser.parse_args()
 
     if args.command == 'init':
@@ -127,6 +134,18 @@ def main():
                 y -= 20
             c.save()
             print(f"Exported to {out}")
+
+
+    elif args.command == 'proof':
+        from proof import generate_proof
+        out = generate_proof(args.logfile)
+        print(f"Proof saved: {out}")
+
+    elif args.command == 'verify-proof':
+        from proof import verify_proof
+        ok = verify_proof(args.logfile, args.prooffile)
+        print("✅ Proof VALID" if ok else "❌ Proof INVALID")
+        sys.exit(0 if ok else 1)
 
 
 if __name__ == '__main__':
