@@ -48,13 +48,14 @@ CEL records every decision, tool call, and event as an immutable hash-chained fr
 
 ## Quick Start
 
+
+```bash
 pip install flask reportlab
 
 python3 cli.py init mylog.log
-
 python3 cli.py append mylog.log --data "Agent started"
-
 python3 cli.py verify mylog.log
+python3 cli.py dump mylog.log
 
 ---
 
