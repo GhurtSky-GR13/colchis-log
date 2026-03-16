@@ -1,18 +1,26 @@
-MIT License with Commons Clause
+Business Source License 1.1
 
-Copyright (c) 2026 Giorgi Ghurtskaia
+Licensor: Giorgi Ghurtskaia
+Licensed Work: Colchis Execution Log (CEL)
+Change Date: 2028-01-01
+Change License: Apache 2.0
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software, to use, copy, modify, and merge copies of the Software,
-subject to the following conditions:
+Parameters
 
-COMMONS CLAUSE:
-The Software may not be sold, sublicensed, or otherwise commercialized without
-written permission from the copyright holder. You may NOT:
-- Sell this Software or modified versions of it
-- Include this Software in a paid product or service
-- Redistribute this Software for commercial gain
+Use Limitation: You may not use the Licensed Work for commercial purposes
+without written permission from the Licensor.
+
+Commercial use includes:
+- Selling the Licensed Work or derivatives
+- Including it in a paid product or service
+- Using it in a revenue-generating system
+
+Non-commercial use (personal projects, research, education) is permitted free of charge.
 
 For commercial licensing: ghurtsky@gmail.com
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+The Licensed Work is provided "as is". The Licensor makes no warranties,
+express or implied.
+
+After the Change Date (2028-01-01), the Licensed Work will be available
+under the Apache 2.0 License.

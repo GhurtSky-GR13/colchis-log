@@ -31,23 +31,22 @@ Think Git — but for AI execution.
 Modern AI systems lack verifiable execution history.
 Traditional logs are mutable, verbose, and difficult to audit.
 
-CEL records every decision, tool call, and event as an immutable hash-chained frame — making execution fully auditable and traceable.
+CEL records every decision, tool call, and event as an **immutable hash-chained frame** — making execution fully auditable and traceable.
 
 ---
 
 ## Features
 
-- Cryptographically verifiable — SHA-256 hash chain
-- Tamper-evident audit trail — for regulatory and legal review
-- Append-only binary log — compact and fast
-- Lightweight — 109-byte frames, minimal overhead
-- Compliance-ready — EU AI Act, GDPR, HIPAA
-- Zero cloud dependency — works fully offline
+- ✅ Cryptographically verifiable — SHA-256 hash chain
+- ✅ Tamper-evident audit trail — for regulatory and legal review
+- ✅ Append-only binary log — compact and fast
+- ✅ Lightweight — 109-byte frames, minimal overhead
+- ✅ Compliance-ready — EU AI Act, GDPR, HIPAA
+- ✅ Zero cloud dependency — works fully offline
 
 ---
 
 ## Quick Start
-
 
 ```bash
 pip install flask reportlab
@@ -56,17 +55,9 @@ python3 cli.py init mylog.log
 python3 cli.py append mylog.log --data "Agent started"
 python3 cli.py verify mylog.log
 python3 cli.py dump mylog.log
-
----
-
-## CEL Pro — $99
-
+CEL Pro — $99
 Includes Execution Proof generator and advanced tools.
-Buy: https://ko-fi.com/s/50fccfeecd
-
----
-
-## Author
-
+👉 Buy CEL Pro
+Author
 Giorgi Ghurtskaia
 Email: ghurtsky@gmail.com
